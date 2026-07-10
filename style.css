@@ -491,5 +491,35 @@ footer h2{
 font-size:30px;
 
 }
+.star{
+    position:fixed;
+    width:3px;
+    height:3px;
+    background:white;
+    border-radius:50%;
+    opacity:.7;
+    animation:twinkle infinite ease-in-out;
+    pointer-events:none;
+    z-index:-1;
+}
+
+@keyframes twinkle{
+
+    0%{
+        transform:scale(0.5);
+        opacity:.2;
+    }
+
+    50%{
+        transform:scale(1.8);
+        opacity:1;
+    }
+
+    100%{
+        transform:scale(0.5);
+        opacity:.2;
+    }
+
+}
 
 }
